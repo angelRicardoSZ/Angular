@@ -1,2 +1,8 @@
+<form [formGroup]="empleadoForm" (ngSubmit)="guardar()">
+  <div class="form-group">
+    <label>primer apellido</label>
+    <input  type="text" formControlName="primer_apellido" class="form-control">
+  </div>
 
+</form>
 <router-outlet></router-outlet>
