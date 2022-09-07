@@ -1,8 +1,45 @@
-<form [formGroup]="empleadoForm" (ngSubmit)="guardar()">
-  <div class="form-group">
-    <label>primer apellido</label>
-    <input  type="text" formControlName="primer_apellido" class="form-control">
-  </div>
+<div class="formularioRegistro">
+  <form [formGroup]="empleadoForm" (ngSubmit)="guardar()">
+    <h2>Crear empleado</h2>
+    <div class="form-group">
+      <label>primer apellido</label>
+      <input  type="text" formControlName="primer_apellido" class="form-control">
+    </div>
 
-</form>
+
+    <div class="form-group">
+      <label>segundo apellido</label>
+      <input  type="text" formControlName="primer_apellido" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label>ciudad</label>
+      <input  type="text" formControlName="primer_apellido" class="form-control">
+    </div>
+
+
+    <div class="form-group">
+      <label>sexo</label>
+      <input  type="text" formControlName="primer_apellido" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label>centro</label>
+      <input  type="text" formControlName="primer_apellido" class="form-control">
+    </div>
+
+
+
+    <div class="form-group">
+      <label>clave_interbancaria</label>
+      <input  type="number" formControlName="primer_apellido" class="form-control">
+    </div>
+    <button  type="submit" class="btn btn-primary">Guardar</button>
+
+
+  </form>
+
+</div>
+
+
 <router-outlet></router-outlet>
